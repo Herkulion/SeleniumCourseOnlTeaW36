@@ -49,5 +49,7 @@ public class Zad3 {
         comment.sendKeys("To jest mój pierwszy automat testowy");
         //wpisz komentarz
 
+        fillSurvey.findElement(By.id("submit")).click();
+        //nacisnij wyślij
     }
 }
