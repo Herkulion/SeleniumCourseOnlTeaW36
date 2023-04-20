@@ -13,36 +13,40 @@ import java.util.UUID;
 public class eksepryment {
     @Test
     public void registerCheck() {
-        WebDriver Chrome = new ChromeDriver();
-        Chrome.get("https://hotel-testlab.coderslab.pl/en/");
-        WebElement signInButton = Chrome.findElement(By.className("hide_xs"));
-        signInButton.click();
+        for (int i = 0; i < 5; i++) {
 
-        WebElement emailType = Chrome.findElement((By.id("email_create")));
-        String randomEmail = UUID.randomUUID().toString() + "@mail.pl";
-        emailType.sendKeys(randomEmail);
+            WebDriver Chrome = new ChromeDriver();
+            Chrome.get("https://hotel-testlab.coderslab.pl/en/");
+            WebElement signInButton = Chrome.findElement(By.className("hide_xs"));
+            signInButton.click();
 
-        WebElement submitBtn = Chrome.findElement(By.id("SubmitCreate"));
-        submitBtn.click();
-        Chrome.manage().timeouts().implicitlyWait(Duration.ofSeconds(16));
+            WebElement emailType = Chrome.findElement((By.id("email_create")));
+            String randomEmail = UUID.randomUUID().toString() + "@mail.pl";
+            emailType.sendKeys(randomEmail);
+
+            WebElement submitBtn = Chrome.findElement(By.id("SubmitCreate"));
+            submitBtn.click();
+            Chrome.manage().timeouts().implicitlyWait(Duration.ofSeconds(16));
 
 
-        WebElement customerFirstname = Chrome.findElement(By.id("customer_firstname"));
-        WebElement customerLastname = Chrome.findElement(By.id("customer_lastname"));
-        WebElement passwd = Chrome.findElement(By.id("passwd"));
-        WebElement email = Chrome.findElement(By.id("email"));
+            WebElement customerFirstname = Chrome.findElement(By.id("customer_firstname"));
+            WebElement customerLastname = Chrome.findElement(By.id("customer_lastname"));
+            WebElement passwd = Chrome.findElement(By.id("passwd"));
+            WebElement email = Chrome.findElement(By.id("email"));
 
-        Assertions.assertTrue(customerFirstname.isDisplayed());
-        Assertions.assertTrue(customerLastname.isDisplayed());
-        Assertions.assertTrue(passwd.isDisplayed());
-        Assertions.assertTrue(email.isDisplayed());
+            Assertions.assertTrue(customerFirstname.isDisplayed());
+            Assertions.assertTrue(customerLastname.isDisplayed());
+            Assertions.assertTrue(passwd.isDisplayed());
+            Assertions.assertTrue(email.isDisplayed());
 
-        customerLastname.sendKeys("lastname");
-        customerFirstname.sendKeys("firstname");
-        passwd.sendKeys("password");
+            customerLastname.sendKeys("lastname");
+            customerFirstname.sendKeys("firstname");
+            passwd.sendKeys("password");
 
-        WebElement submitAccount = Chrome.findElement(By.id("submitAccount"));
-        submitAccount.click();
+            WebElement submitAccount = Chrome.findElement(By.id("submitAccount"));
+            submitAccount.click();
+            Chrome.quit();
+        }
     }
 }
 
