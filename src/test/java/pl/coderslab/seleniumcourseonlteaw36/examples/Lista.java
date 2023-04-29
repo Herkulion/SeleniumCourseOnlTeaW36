@@ -1,4 +1,4 @@
-package pl.coderslab.SeleniumCourseOnlTeaW36.examples;
+package pl.coderslab.seleniumcourseonlteaw36.examples;
 
 public class Lista {
     public static void main(String[] args) {

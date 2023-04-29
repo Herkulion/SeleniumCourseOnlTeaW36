@@ -1,4 +1,4 @@
-package pl.coderslab.SeleniumCourseOnlTeaW36.PageObjectPattern;
+package pl.coderslab.seleniumcourseonlteaw36.pageobjectpattern;
 
 public class UserPersonalData {
     private  String firstName;

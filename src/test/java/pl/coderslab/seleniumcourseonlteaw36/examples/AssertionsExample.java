@@ -1,4 +1,4 @@
-package pl.coderslab.SeleniumCourseOnlTeaW36.examples;
+package pl.coderslab.seleniumcourseonlteaw36.examples;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

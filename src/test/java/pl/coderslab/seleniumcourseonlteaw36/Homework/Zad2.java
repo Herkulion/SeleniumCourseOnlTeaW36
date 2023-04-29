@@ -1,4 +1,4 @@
-package pl.coderslab.SeleniumCourseOnlTeaW36.Homework;
+package pl.coderslab.seleniumcourseonlteaw36.Homework;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;

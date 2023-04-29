@@ -1,4 +1,4 @@
-package pl.coderslab.SeleniumCourseOnlTeaW36.PageObjectPattern;
+package pl.coderslab.seleniumcourseonlteaw36.pageobjectpattern;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package pl.coderslab.SeleniumCourseOnlTeaW36.PageObjectPattern;
+package pl.coderslab.seleniumcourseonlteaw36.pageobjectpattern;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
