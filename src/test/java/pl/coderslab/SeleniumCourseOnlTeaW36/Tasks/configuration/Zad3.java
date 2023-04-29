@@ -1,4 +1,4 @@
-package pl.coderslab.SeleniumSourceOnlTeaW36.Tasks.configuration;
+package pl.coderslab.SeleniumCourseOnlTeaW36.Tasks.configuration;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;

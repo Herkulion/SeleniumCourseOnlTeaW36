@@ -1,4 +1,4 @@
-package pl.coderslab.SeleniumSourceOnlTeaW36.Tasks.searching;
+package pl.coderslab.SeleniumCourseOnlTeaW36.Tasks.searching;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;

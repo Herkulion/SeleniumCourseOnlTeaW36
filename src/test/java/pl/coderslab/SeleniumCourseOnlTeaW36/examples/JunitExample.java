@@ -1,4 +1,4 @@
-package pl.coderslab.SeleniumSourceOnlTeaW36.examples;
+package pl.coderslab.SeleniumCourseOnlTeaW36.examples;
 
 import org.junit.jupiter.api.*;
 

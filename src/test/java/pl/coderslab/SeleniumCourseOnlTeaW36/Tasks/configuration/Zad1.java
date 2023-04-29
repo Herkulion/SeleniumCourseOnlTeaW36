@@ -1,11 +1,10 @@
-package pl.coderslab.SeleniumSourceOnlTeaW36.Tasks.configuration;
+package pl.coderslab.SeleniumCourseOnlTeaW36.Tasks.configuration;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 
 import java.time.Duration;
 

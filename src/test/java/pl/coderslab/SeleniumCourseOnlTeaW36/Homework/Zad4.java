@@ -1,13 +1,10 @@
-package pl.coderslab.SeleniumSourceOnlTeaW36.Homework;
+package pl.coderslab.SeleniumCourseOnlTeaW36.Homework;
 
-import org.checkerframework.checker.units.qual.C;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.w3c.dom.Text;
 
 import java.util.concurrent.TimeUnit;
 

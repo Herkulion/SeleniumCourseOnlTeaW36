@@ -1,6 +1,5 @@
-package pl.coderslab.SeleniumSourceOnlTeaW36.Tasks.functions;
+package pl.coderslab.SeleniumCourseOnlTeaW36.Tasks.functions;
 
-import org.checkerframework.checker.units.qual.C;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
