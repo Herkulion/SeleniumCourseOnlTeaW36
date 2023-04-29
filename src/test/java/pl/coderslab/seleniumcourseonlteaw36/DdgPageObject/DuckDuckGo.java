@@ -30,6 +30,8 @@ public class DuckDuckGo {
     main.searchThisAndSubmit("Gdziekolwiek");
     DdgSearchedPage searched = new DdgSearchedPage(driver);
     searched.list();
+    searched.searchThisAndSubmit("Cokolwiek");
+    searched.list();
     }
     @AfterEach
     public void terminate() {
