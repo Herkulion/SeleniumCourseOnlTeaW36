@@ -1,4 +1,4 @@
-package pl.coderslab.seleniumcourseonlteaw36.DdgPageObject;
+package pl.coderslab.seleniumcourseonlteaw36.DuckDuckGoPageObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,11 +6,11 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class DdgSearchedPage {
+public class SearchesPage {
     private WebDriver driver;
 
 
-    DdgSearchedPage(WebDriver driver) {
+    SearchesPage(WebDriver driver) {
         this.driver = driver;
     }
 

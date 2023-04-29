@@ -1,13 +1,13 @@
-package pl.coderslab.seleniumcourseonlteaw36.DdgPageObject;
+package pl.coderslab.seleniumcourseonlteaw36.DuckDuckGoPageObject;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class DdgMainPage {
+public class MainPageSearch {
     private final WebDriver driver;
 
-    DdgMainPage(WebDriver driver){
+    MainPageSearch(WebDriver driver){
         this.driver = driver;
     }
 

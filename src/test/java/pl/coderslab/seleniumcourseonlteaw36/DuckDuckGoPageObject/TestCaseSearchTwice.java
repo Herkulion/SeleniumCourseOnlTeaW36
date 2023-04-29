@@ -1,18 +1,14 @@
-package pl.coderslab.seleniumcourseonlteaw36.DdgPageObject;
+package pl.coderslab.seleniumcourseonlteaw36.DuckDuckGoPageObject;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
-import java.util.List;
-import java.util.UUID;
 
-public class DuckDuckGo {
+public class TestCaseSearchTwice {
 
     private WebDriver driver;
 
@@ -25,13 +21,15 @@ public class DuckDuckGo {
 
     }
     @Test
-    public void DuckDuckGo() {
-    DdgMainPage main = new DdgMainPage(driver);
+    public void DuckDuckGo() throws InterruptedException {
+    MainPageSearch main = new MainPageSearch(driver);
     main.searchThisAndSubmit("Gdziekolwiek");
-    DdgSearchedPage searched = new DdgSearchedPage(driver);
+    SearchesPage searched = new SearchesPage(driver);
     searched.list();
     searched.searchThisAndSubmit("Cokolwiek");
     searched.list();
+    Thread.sleep(1);
+
     }
     @AfterEach
     public void terminate() {
