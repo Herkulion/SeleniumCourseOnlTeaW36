@@ -1,4 +1,4 @@
-package pl.coderslab.seleniumcourseonlteaw36.pageobjectpattern;
+package pl.coderslab.seleniumcourseonlteaw36;
 
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebElement;

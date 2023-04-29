@@ -27,4 +27,6 @@ public class HotelTestlabCrerateAnAccountPage {
         WebElement registrationSubmitButton = driver.findElement(By.cssSelector("#submitAccount"));
         registrationSubmitButton.click();
     }
+
+
 }
