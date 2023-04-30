@@ -1,9 +1,12 @@
-package pl.coderslab.seleniumcourseonlteaw36.pageobjectpattern;
+package pl.coderslab.seleniumcourseonlteaw36.pageobjectpattern_zadania;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import pl.coderslab.seleniumcourseonlteaw36.Tools;
 
 
@@ -36,8 +39,30 @@ private WebDriver driver;
                     .setLastName("Makota")
                     .setPassword("#passwd");
 
-            HotelTestlabCrerateAnAccountPage createAnAccountPage = new HotelTestlabCrerateAnAccountPage(driver);
+            HotelTestlabCreateAnAccountPage createAnAccountPage = new HotelTestlabCreateAnAccountPage(driver);
             createAnAccountPage.fillPersonalInformationForm(userData);
             createAnAccountPage.clickRegister();
+        }
+
+        @Test
+        public void logInAndSearchHotel() {
+            HotelTestlabMainPage hotelMainPage = new HotelTestlabMainPage(driver);
+            hotelMainPage.clickSignIn();
+            WebElement email = driver.findElement(By.id("email"));
+            WebElement passwd = driver.findElement(By.id("passwd"));
+            WebElement submitLogin = driver.findElement(By.id("SubmitLogin"));
+            email.sendKeys("fa0e1a22-17d7-473a-9e1f-ddb591cd8e56@mail.pl");
+            passwd.sendKeys("#passwd");
+            submitLogin.click();
+
+            WebElement homeButtonLeft = driver.findElement(By.cssSelector("a[title='Home']"));
+            homeButtonLeft.click();
+
+            WebElement hotelLocation = driver.findElement(By.id("hotel_location"));
+            hotelLocation.sendKeys("Warsaw");
+
+
+
+
         }
     }
