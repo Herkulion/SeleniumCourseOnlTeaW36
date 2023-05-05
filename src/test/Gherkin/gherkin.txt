@@ -1,0 +1,29 @@
+Zad1
+
+Scenario: Searching phrase in Google
+Given Page "google.com" opened in the browser
+When phrase "dowolna" is entered in the input box
+And search button clicked
+Then will be shown all results about phrase "dowolna"
+
+
+zad2
+logowanie do portalu edukacyjnego Coders Lab
+
+Scenario: Logging in to Coders Lab
+Given Page "https://lms.coderslab.pl" opened in the browser
+When Password "123" and email "123@123.123" is written in right inputs
+And login button clicked
+Then you will be logged on site Coders Lab
+
+
+zad3
+uruchomienie pierwszej prezentacji z preworku Java na kursie testera automatyzującego.
+
+Scneario: Launching first presentation from Java Prework
+Given Page "https://lms.coderslab.pl" opened in the browser
+And user is logged to Coders Lab
+When Clicked on button Java Prework
+And Clicked on button of first presentation
+Then first presentetion will launch
+
