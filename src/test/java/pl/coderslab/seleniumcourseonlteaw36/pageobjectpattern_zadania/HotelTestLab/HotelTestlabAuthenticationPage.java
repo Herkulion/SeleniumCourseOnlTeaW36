@@ -1,4 +1,4 @@
-package pl.coderslab.seleniumcourseonlteaw36.pageobjectpattern_zadania;
+package pl.coderslab.seleniumcourseonlteaw36.pageobjectpattern_zadania.HotelTestLab;
 import org.checkerframework.checker.signature.qual.FieldDescriptor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

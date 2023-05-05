@@ -1,4 +1,4 @@
-package pl.coderslab.seleniumcourseonlteaw36.pageobjectpattern_zadania;
+package pl.coderslab.seleniumcourseonlteaw36.pageobjectpattern_zadania.HotelTestLab;
 
 public class UserPersonalData {
     private  String firstName;

@@ -15,4 +15,8 @@ public class Tools {
     public static String generateRandomEmail() {
         return UUID.randomUUID().toString() + "@mail.pl";
     }
+    public static String genRandomData() {
+        return UUID.randomUUID().toString();
+    }
+
 }
